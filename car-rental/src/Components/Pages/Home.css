@@ -1,0 +1,141 @@
+/* .containerHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 77vh;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-container, .button-container {
+    flex: unset;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+  }
+} */
+
+
+
+
+.containerHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+  background-color: darkblue;
+  position: relative;
+}
+
+.containerHome::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 10%;
+  width: 45%;
+  margin-right:15px;
+  background-color: lightblue;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.link {
+  text-decoration: none;
+}
+
+.buttons {
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  background-color: blue;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-container, .button-container {
+    flex: unset;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+}
